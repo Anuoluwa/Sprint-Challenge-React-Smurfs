@@ -12,6 +12,8 @@ HTTP means HyperText Transfer Protocol. HTTP is the underlying protocol used by 
 
 For example, when you enter a URL in your browser, this actually sends an HTTP command to the Web server directing it to fetch and transmit the requested Web page. The other main standard that controls how the World Wide Web works is HTML, which covers how Web pages are formatted and displayed.
 
+
+
 1.  What does CRUD stand for?
 
 In a REST environment, CRUD often corresponds to the HTTP methods POST, GET, PUT, and DELETE, respectively. These are the fundamental elements of a persistent storage system.
