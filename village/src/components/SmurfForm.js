@@ -21,11 +21,15 @@ class SmurfForm extends Component {
       height,
     }
     axios.post('http://localhost:3333/smurfs',newSmurf)
+    .then(response => {
+      this.props.getAllSmurfs();
+    })
     this.setState({
       name: '',
       age: '',
       height: ''
     })
+   
     this.props.history.push('/');
     
   }
@@ -35,7 +39,6 @@ class SmurfForm extends Component {
   };
 
   render() {
-    console.log(this.props.smurfs)
 
     return (
       <div className="SmurfForm">

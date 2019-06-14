@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-// import styled, { css } from "styled-components";
+import styled, { css } from "styled-components";
 export class DeleteWarningCard extends Component {
     state = {
       name: '',
@@ -43,7 +43,7 @@ export class DeleteWarningCard extends Component {
     const { history } = this.props;
         return (
             <div className="alert">
-                <span className="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <span className="closebtn">&times;</span>
                 <div>{name}</div>
                 <div>{age}</div>
                 <div>{height}</div>
